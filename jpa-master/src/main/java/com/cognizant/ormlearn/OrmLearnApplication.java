@@ -42,7 +42,7 @@ public class OrmLearnApplication {
 
 	public static void testAddCountry() {
 	 
-		Country country = new Country("cs", "cognizant");
+		Country country = new Country("cs", "abcd");
 		countryService.addCountry(country);
 
     }
@@ -84,7 +84,7 @@ public class OrmLearnApplication {
 		getAllCountriesTest("IN");
 		testAddCountry();
 		getAllCountriesTest("cs");
-		updateCountryTest("cs", "cognizant_manasa");
+		updateCountryTest("cs", "manasa");
 		deleteCountryTest("cs");
 		findCountryTest("ou");
 
